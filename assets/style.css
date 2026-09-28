@@ -195,3 +195,20 @@ footer.site { text-align: center; padding: 30px 22px; color: var(--ink-soft); fo
   .daycard img { aspect-ratio: auto; height: 100%; }
   .daycard-text { padding: 10px 14px; }
 }
+
+/* ---------- landing, stronger (desktop first, phone overrides below) ---------- */
+.landing::after { background: radial-gradient(ellipse at center, rgba(20,16,12,.55) 0%, rgba(20,16,12,.35) 60%, rgba(20,16,12,.55) 100%); }
+.landing .greeting { font-family: "Playfair Display", serif; font-style: italic; font-weight: 600; font-size: clamp(1.8rem, 4.2vw, 3rem); color: var(--gold); text-shadow: 0 2px 18px rgba(0,0,0,.6); margin-bottom: 4px; }
+.landing h1 { font-size: clamp(4rem, 13vw, 9rem); letter-spacing: .01em; line-height: 1; text-shadow: 0 6px 40px rgba(0,0,0,.65); }
+.landing .dates { color: #fff; font-size: clamp(1rem, 2vw, 1.3rem); letter-spacing: .08em; text-transform: uppercase; margin-top: 18px; }
+.landing .tag { font-size: clamp(1.1rem, 1.8vw, 1.35rem); max-width: 640px; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+.thumbs { gap: 16px; max-width: 900px; }
+.thumb { width: 240px; border-radius: 14px; }
+.thumb img { height: 160px; }
+.thumb span { font-size: 1rem; padding: 26px 10px 10px; }
+@media (max-width: 700px) {
+  .thumbs { gap: 8px; }
+  .thumb { width: 31%; max-width: 130px; border-radius: 10px; }
+  .thumb img { height: 90px; }
+  .thumb span { font-size: .78rem; padding: 16px 6px 6px; }
+}
